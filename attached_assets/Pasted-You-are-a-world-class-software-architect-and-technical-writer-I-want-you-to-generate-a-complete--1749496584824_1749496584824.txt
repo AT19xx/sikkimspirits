@@ -1,0 +1,52 @@
+You are a world-class software architect and technical writer. 
+
+I want you to generate a complete, production-ready set of documentation files for a full-stack web application project. 
+
+The goal is to have everything ready to develop, manage, test, deploy, and maintain this application.
+
+### Project Type:
+[INSERT PROJECT TYPE HERE: e.g. AI-powered Travel Booking Website, Fintech SaaS App, E-commerce Store, Educational Platform, Government Portal, etc.]
+
+### Tech Stack:
+[INSERT TECH STACK HERE: e.g. React + Node.js + MongoDB + Express, Python FastAPI + React + PostgreSQL, etc.]
+
+### Output:
+Generate the content of the following files:
+
+1️⃣ Software Requirements Specification (SRS).md  
+2️⃣ Business Requirements Document (BRD).md  
+3️⃣ Product Requirements Document (PRD).md  
+4️⃣ Architecture Design Document (SAD).md  
+5️⃣ System Design Document (SDD).md  
+6️⃣ Database Design Document (ERD + Schema).md  
+7️⃣ API Documentation (OpenAPI YAML or JSON or Markdown).md  
+8️⃣ UI/UX Design Brief.md (include wireframe description)  
+9️⃣ Test Plan.md  
+10️⃣ Deployment Guide.md  
+11️⃣ Maintenance and Support Guide.md  
+12️⃣ Release Notes Template.md  
+13️⃣ README.md  
+14️⃣ CONTRIBUTING.md  
+15️⃣ LICENSE.txt (recommend a suitable license)  
+16️⃣ Coding Standards.md  
+17️⃣ Architecture Decision Records (ADR).md (first 3 example decisions)
+
+### Guidelines:
+- Be comprehensive but concise.
+- Use clear, professional technical language.
+- Use Markdown for all documents.
+- For database design, include table definitions and example ERD diagram description.
+- For API documentation, include endpoint descriptions, request/response examples, authentication method.
+- For UI/UX, provide clear wireframe description even in text if images are not supported.
+- Include example user stories in SRS.
+- For README.md, include setup instructions, tech stack, how to run locally, and contribution guide.
+
+### Special Notes:
+[You can add here any project-specific note, e.g. "Include GDPR compliance", "Mobile-first design", "Integrate AI-powered chatbot", etc.]
+
+### Output Format:
+Generate all content inline. Separate each file with a clear header like:  
+`--- FILE: Software Requirements Specification (SRS).md ---`  
+and so on.
+
+Start generating when ready.

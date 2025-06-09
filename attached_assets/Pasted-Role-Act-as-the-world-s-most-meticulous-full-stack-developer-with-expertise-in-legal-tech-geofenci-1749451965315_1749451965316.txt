@@ -1,0 +1,61 @@
+Role: Act as the world’s most meticulous full-stack developer with expertise in legal tech, geofencing, and AI-powered KYC. Build a fully compliant, production-ready online alcohol delivery app for Sikkim, India, with zero tolerance for legal/technical errors.
+
+Core Requirements:
+
+Exhaustive Feature List (Cover every possible edge case):
+User Roles:
+Customers (Aadhaar+Video KYC), Delivery Agents (Police-verified), Admin (Excise Dept. access), Government APIs
+Core Flows:
+Age/GPS verification → Order placement → Excise tax calc → Geo-fenced delivery → Blockchain audit log
+Legal Safeguards:
+Dry-zone detection (500m from schools/temples), Sikkim Excise Act §12 compliance, Dynamic pricing (excise duty changes)
+Advanced Features:
+AI Liveness Check (3D face + voice OTP), Smart Contracts (auto-reporting to Excise Dept.), IoT Temperature Control (for premium liquor during transit)
+Zero-Error Architecture:
+Tech Stack:
+Frontend: React Native (iOS/Android) + Next.js (Admin Dashboard)
+Backend: Django (Python) for legal compliance + Node.js microservices (high-throughput)
+Database: PostgreSQL (ACID) + Redis (caching) + IPFS (KYC video storage)
+Fail-Safes:
+Automated testing (Selenium, Jest) covering:
+Excise API downtime → Fallback to manual verification
+GPS spoofing → Delivery agent biometric re-auth
+Complete Documentation:
+Developer Guide:
+INSTALLATION.md: Docker setup, .env template (AWS keys, Excise API secrets)
+API_DOCS.md: Swagger/OpenAPI specs for all endpoints (e.g., /excise/report)
+Legal Docs:
+COMPLIANCE_CHECKLIST.md: Sikkim Excise Act clauses mapped to code (e.g., §12(2) = OrderValidator.validateAge() )
+User Manuals:
+DELIVERY_AGENT_PROTOCOL.md: Step-by-step KYC reverification at doorstep
+Production-Ready Packaging:
+Infrastructure as Code (IaC):
+Terraform scripts for AWS/GCP (auto-scaling, geo-redundant DBs)
+CI/CD:
+GitHub Actions pipeline with:
+Pre-commit hooks (ESLint, Black)
+Post-deploy monitoring (Sentry + Prometheus)
+Error Minimization Protocols:
+Static Analysis:
+SonarQube integration (zero critical bugs allowed)
+Legal Review:
+Automated code comments linking to Sikkim Excise Act (e.g., // §8(1): Max 2L/day → ORDER_LIMIT=2000)
+Expected Deliverables:
+
+A GitHub repo with:
+Fully functional code (no placeholder TODOs)
+Dockerfile + docker-compose.yml for local testing
+Pre-configured Postman collection for API testing
+A legal compliance report (PDF) certifying alignment with:
+Sikkim Excise Act (2009)
+India’s GST laws (18% + excise)
+Data protection (Puttaswamy Judgment)
+A disaster recovery playbook covering:
+Excise API failure → Manual CSV upload process
+Geo-fencing false positives → Override protocol
+Validation Criteria:
+
+The app must not start if:
+EXCISE_API_KEY is missing (hard fail)
+PostgreSQL isn’t version 14+ (ACID compliance)
+All user flows must log to both database and blockchain (Hyperledger Fabric)
