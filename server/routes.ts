@@ -486,6 +486,11 @@ export async function registerRoutes(app: Express): Promise<Server> {
     });
   });
 
+  // Keepalive endpoint to prevent Render free tier sleeping
+  app.get("/keepalive", (_req, res) => {
+    res.status(200).json({ status: "alive" });
+  });
+
   const httpServer = createServer(app);
   return httpServer;
 }
