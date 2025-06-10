@@ -1,0 +1,20 @@
+
+services:
+  - type: web
+    name: sikkimspirits
+    runtime: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+    healthCheckPath: /api/health
+    
+databases:
+  - name: sikkimspirits-db
+    databaseName: sikkimspirits
+    user: sikkimspirits_user
+    plan: free
